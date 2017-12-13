@@ -111,6 +111,7 @@ data:
       remove_prefix kubernetes
       <template>
         time_slice_format %Y%m%d
+        time_format %Y-%m-%dT%H:%M:%S.%NZ
         path /var/log/log-collector/container.${tag_parts[1]}.${tag_parts[0]}.*.log
         format json
         append true
@@ -125,6 +126,7 @@ data:
       remove_prefix service
       <template>
         time_slice_format %Y%m%d
+        time_format %m%d %H:%M:%S.%N
         path /var/log/log-collector/service.${tag_parts[1]}.${tag_parts[0]}.*.log
         format json
         append true    
