@@ -10,7 +10,7 @@ import:
   - pkg/util/wait
   - pkg/watch
 - package: k8s.io/client-go
-  version: v4.0.0-beta.0
+  version: v6.0.0
   subpackages:
   - kubernetes
   - pkg/api
@@ -19,7 +19,7 @@ import:
   - tools/cache
   - tools/clientcmd
 - package: k8s.io/kubernetes
-  version: v1.7.0
+  version: v1.9.1
   subpackages:
   - pkg/kubectl/cmd/util
   - pkg/kubectl/resource
